@@ -1,4 +1,5 @@
-// 4ms ; 7.7 MB
+//Runtime: 4ms
+//Memory Usage: 7.7 MB
 
 
 class Solution {

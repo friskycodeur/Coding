@@ -1,3 +1,6 @@
+//Runtime: 8 ms
+//Memory Usage: 9.9 MB
+
 class Solution {
 public:
     vector<int> joinArray(vector<int>& arr,int n){
