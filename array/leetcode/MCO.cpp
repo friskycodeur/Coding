@@ -3,10 +3,10 @@
 
 class Solution {
 public:
-    int repeatedOnes(vector<int>& arr,int n){
+    int repeatedNumber(vector<int>& arr,int n,int a){
         int count=0,res=0;
         for(int i=0;i<n;i++){
-            if(arr[i]==1){
+            if(arr[i]==a){
                 count++;
             }
             else{
@@ -21,6 +21,6 @@ public:
     
     int findMaxConsecutiveOnes(vector<int>& nums) {
         int n=nums.size();
-        return repeatedOnes(nums,n);
+        return repeatedOnes(nums,n,1);
     }
 };
