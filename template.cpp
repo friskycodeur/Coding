@@ -18,11 +18,6 @@ typedef vector<int> vi;
 #define all(x) x.begin(),x.end()
 
 
-// Solve function
-void solve(){
-
-}
-
 
 // array print function
 void printArray(int arr[],int size){
@@ -37,6 +32,11 @@ void inputArray(int arr[],int size){
     FOR(i,size){
         cin>>arr[i];
     }
+}
+
+// Solve function
+void solve(){
+
 }
 
 int main(){
