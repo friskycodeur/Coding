@@ -31,7 +31,6 @@ public:
         return a;
     }
 };
-
 // { Driver Code Starts.
 
 int main()
