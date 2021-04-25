@@ -1,3 +1,5 @@
+// Author @friskycodeur
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,14 +8,21 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef vector<int> vi;
+typedef vector<ll> vll;
+typedef vector<vector<int>> v2di;
+typedef vector<vector<ll>> v2dll;
+
 
 
 
 // loop
-#define For(i,a,b) for(int i=a;i<b;i++)
-#define FOR(i,a) for(int i=0;i<a;i++)
-#define DEC(i,a) for(int i=(a)-1;i>=0;i--)
+#define forin(i,a,b) for(ll i=a;i<b;i++)
+#define forn(i,a) for(ll i=0;i<a;i++)
+#define rforn(i,a) for(ll i=a;i>=0;i--)
+#define rforsn(i,a,b) for(ll i=a;i>=b;i--)
 
+// for faster processing
+#define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 
 #define all(x) x.begin(),x.end()
 
@@ -21,7 +30,7 @@ typedef vector<int> vi;
 
 // array print function
 void printArray(int arr[],int size){
-    FOR(i,size)
+    forn(i,size)
         cout<<arr[i]<<" ";
 
     cout<<endl;
@@ -29,7 +38,7 @@ void printArray(int arr[],int size){
 
 // Array input func
 void inputArray(int arr[],int size){
-    FOR(i,size){
+    forn(i,size){
         cin>>arr[i];
     }
 }
@@ -40,7 +49,7 @@ void solve(){
 }
 
 int main(){
-    ios_base::sync_with_stdio(0);cin.tie(0);
+    fast_cin();
     int t;cin>>t;
     while(t--){
         solve();
