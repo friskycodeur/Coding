@@ -26,16 +26,6 @@ typedef vector<vector<ll>> v2dll;
 
 #define all(x) x.begin(),x.end()
 
-
-
-// array print function
-void printArray(int arr[],int size){
-    forn(i,size)
-        cout<<arr[i]<<" ";
-
-    cout<<endl;
-}
-
 // Array input func
 void inputArray(int arr[],int size){
     forn(i,size){
