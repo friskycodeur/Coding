@@ -43,34 +43,42 @@ void inputArray(int arr[],int size){
     }
 }
 
+
 // Solve function
-bool solve(){
-    ll n,w,wr;
-    cin>>n>>w>>wr;
-    unordered_map<ll,ll> m;
-    ll arr[n];
-    forn(i,n){
-        cin>>arr[i];
-        m[arr[i]]++;
-    }
-    ll sum=0;
-    for(auto x:m){
-        if(x.second%2==0){
-            sum+=(x.second*x.first);
+void solve(int n,int m){
+    string Map[n];
+    forn(i,n) cin>>Map[i];
+    vi lands;
+    vector<pair<int,int>> d4{{0,1},{0,-1},{1,0},{-1,0}};
+
+    auto inside= [&](pair<int,int> pt){
+        auto [x, y]=pt;
+        return x>=0 and y>=0 and x<n and y<m;
+    };
+
+    auto land_fill=[&](int i , int j){
+        queue<pair<int,int>> q;
+        Map[i][j]='0';
+        q.push({i,j});
+        int sz=0;
+        while(!q.empty()){
+            auto [x,y]=q.front();
+            q.pop;sz++;
+            for(auto [dx,dy]:d4){
+                
+            }
         }
-    }
-    if(sum+wr>=w) return true;
-    return false;
+    } 
+
 }
 
 int main(){
     fast_cin();
-    ll t;cin>>t;
+    int t;cin>>t;
     while(t--){
-        if(solve()) cout<<"YES\n";
-        else cout<<"NO\n";
+        int n,m;cin>>n>>m;
+        solve(n,m);
     }
-    return 0;
 }
 
  
